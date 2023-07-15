@@ -1,0 +1,12 @@
+﻿using Newtonsoft.Json;
+
+namespace APICatalogo.DTOs
+{
+    public class CategoriaDTO
+    {
+        public int CategoriaId { get; set; }
+        public string Nome { get; set; }
+        public string imagemUrl { get; set; }        
+        public ICollection<ProdutoDTO> Produtos { get; set;}
+    }
+}
